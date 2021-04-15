@@ -1,0 +1,15 @@
+Certificate project  :
+----------------------
+
+step 1:[network up]
+-------
+
+./network.sh createChannel -ca -c mychannel  [with out couch]
+
+./network.sh createChannel -ca -c mychannel -s couchdb
+
+
+step 2:[chain code deployment]
+-------
+./network.sh deployCC -ccn cert -ccp ./../cert-ledger/chaincode -ccv 1.0  -ccl javascript
+
